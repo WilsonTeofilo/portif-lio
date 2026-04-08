@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wilson Teofilo - Dev & IT Support</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Fundo aquático animado -->
+  <div class="bg-ocean" aria-hidden="true">
+    <div class="bubble b1"></div>
+    <div class="bubble b2"></div>
+    <div class="bubble b3"></div>
+    <div class="bubble b4"></div>
+    <div class="bubble b5"></div>
+    <div class="wave w1"></div>
+    <div class="wave w2"></div>
+    <div class="wave w3"></div>
+    <div class="grid-lines"></div>
+  </div>
+
+  <!-- Silhueta decorativa (SVG inline, sem imagem) -->
+<div class="character-container" aria-hidden="true">
+  <img src="/assets/0407.gif" alt="Wilson Teofilo Animado" class="char-gif">
+</div>
+
+  <!-- HUD - dinheiro/header tipo jogo -->
+  <header class="hud-header" role="banner">
+    <div class="hud-money">
+      <span class="hud-yen">¥</span>
+      <span class="hud-amount" id="expCounter">0</span>
+      <span class="hud-label">anos de exp</span>
+    </div>
+    <nav class="hud-nav" aria-label="Seções do portfólio">
+      <a href="#hero" class="hud-navlink" data-section="hero">INÍCIO</a>
+      <a href="#why" class="hud-navlink" data-section="why">DIFERENCIAL</a>
+      <a href="#projects" class="hud-navlink" data-section="projects">PROJETOS</a>
+      <a href="#skills" class="hud-navlink" data-section="skills">STACK</a>
+      <a href="#contact" class="hud-navlink" data-section="contact">CONTATO</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO — tela de menu principal -->
+    <section id="hero" class="screen screen-hero">
+      <div class="screen-inner">
+
+        <!-- Texto lateral rotacionado tipo "PRINCIPAL" -->
+        <div class="vertical-label" aria-hidden="true">PORTFOLIO</div>
+
+        <!-- Menu em cascata inclinado -->
+        <div class="p3-menu" role="navigation" aria-label="Menu principal">
+          <div class="p3-menu-item selected" data-target="hero">
+            <div class="menu-diamond" aria-hidden="true"></div>
+            <span class="menu-text">WILSON TEOFILO</span>
+          </div>
+          <a href="#why" class="p3-menu-item" data-index="1">
+            <span class="menu-text">POR QUE TRABALHAR COMIGO</span>
+          </a>
+          <a href="#projects" class="p3-menu-item" data-index="2">
+            <span class="menu-text">PROJETOS</span>
+          </a>
+          <a href="#skills" class="p3-menu-item" data-index="3">
+            <span class="menu-text">STACK</span>
+          </a>
+          <a href="#contact" class="p3-menu-item" data-index="4">
+            <span class="menu-text">CONTATO</span>
+          </a>
+        </div>
+
+        <!-- Subtítulo hero -->
+        <p class="hero-sub">DEV &amp; SUPORTE DE TI</p>
+        <p class="hero-desc">
+          Soluções digitais que resolvem problemas reais.<br/>
+          PHP · JavaScript · Java · SQL
+        </p>
+
+      </div>
+
+      <!-- HUD inferior -->
+      <div class="hud-bottom" aria-hidden="true">
+        <span class="hud-cmd"><span class="hud-btn">A</span> Confirmar</span>
+        <span class="hud-cmd"><span class="hud-btn">B</span> Fechar</span>
+        <span class="hud-tip-label">Acesse as seções<span class="hud-tip-sub">Comandos</span></span>
+      </div>
+    </section>
+
+    <!-- WHY — seção "por que trabalhar comigo" no estilo Party Stats -->
+    <section id="why" class="screen screen-why">
+      <div class="section-tag-label" aria-hidden="true">DIFERENCIAL</div>
+      <div class="screen-inner">
+        <div class="p3-section-title">
+          <div class="title-diamond" aria-hidden="true"></div>
+          <h2>Por que trabalhar comigo</h2>
+        </div>
+
+        <div class="party-list">
+          <article class="party-member" data-color="#00ccff" style="--member-color:#00ccff">
+            <div class="member-bar">
+              <div class="member-icon" aria-hidden="true">
+                <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 20 Q20 10 26 20 Q20 30 14 20Z" fill="currentColor" opacity="0.6"/></svg>
+              </div>
+              <div class="member-tag">OLHAR</div>
+            </div>
+            <div class="member-info">
+              <h3 class="member-name">Olhar de Suporte</h3>
+              <p class="member-desc">Venho da base de manutenção e diagnóstico. Estabilidade, prevenção de erro e facilidade de suporte desde o início.</p>
+              <div class="member-stats">
+                <span class="stat-label">EXP</span>
+                <div class="stat-bar"><div class="stat-fill" style="width:85%"></div></div>
+                <span class="stat-val">4 anos</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="party-member" data-color="#ff0099" style="--member-color:#ff0099">
+            <div class="member-bar">
+              <div class="member-icon" aria-hidden="true">
+                <svg viewBox="0 0 40 40"><rect x="8" y="8" width="24" height="24" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><line x1="14" y1="20" x2="26" y2="20" stroke="currentColor" stroke-width="2"/><line x1="20" y1="14" x2="20" y2="26" stroke="currentColor" stroke-width="2"/></svg>
+              </div>
+              <div class="member-tag">FOCO</div>
+            </div>
+            <div class="member-info">
+              <h3 class="member-name">Foco em Clareza</h3>
+              <p class="member-desc">Interfaces diretas, caminhos simples e funcionalidades que fazem sentido para quem usa. Sem excesso de complicação.</p>
+              <div class="member-stats">
+                <span class="stat-label">UX</span>
+                <div class="stat-bar"><div class="stat-fill" style="width:78%"></div></div>
+                <span class="stat-val">383 SP</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="party-member" data-color="#ffcc00" style="--member-color:#ffcc00">
+            <div class="member-bar">
+              <div class="member-icon" aria-hidden="true">
+                <svg viewBox="0 0 40 40"><polygon points="20,6 34,32 6,32" fill="none" stroke="currentColor" stroke-width="2"/><line x1="20" y1="16" x2="20" y2="24" stroke="currentColor" stroke-width="2"/><circle cx="20" cy="27" r="1.5" fill="currentColor"/></svg>
+              </div>
+              <div class="member-tag">CÓDIGO</div>
+            </div>
+            <div class="member-info">
+              <h3 class="member-name">Código para Crescer</h3>
+              <p class="member-desc">Projeto estruturado para ser atualizado: camadas separadas, bancos bem modelados, sem gambiarra difícil de manter.</p>
+              <div class="member-stats">
+                <span class="stat-label">DEV</span>
+                <div class="stat-bar"><div class="stat-fill" style="width:70%"></div></div>
+                <span class="stat-val">353 HP</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="hud-bottom" aria-hidden="true">
+          <span class="hud-cmd"><span class="hud-btn">X</span> Party</span>
+          <span class="hud-cmd"><span class="hud-btn">A</span> Stats</span>
+          <span class="hud-cmd"><span class="hud-btn">B</span> Voltar</span>
+          <span class="hud-tip-label">Cujos detalhes ver?<span class="hud-tip-sub">Guia</span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS — tela de missões -->
+    <section id="projects" class="screen screen-projects">
+      <div class="section-tag-label" aria-hidden="true">MISSÃO</div>
+      <div class="screen-inner">
+        <div class="p3-section-title">
+          <div class="title-diamond" aria-hidden="true"></div>
+          <h2>Projetos em Destaque</h2>
+        </div>
+
+        <div class="mission-list">
+          <article class="mission-card" tabindex="0">
+            <div class="mission-header">
+              <span class="mission-tag">PLATAFORMA</span>
+              <div class="mission-status active-status">ATIVO</div>
+            </div>
+          <a class="mission-name" href="https://shitoproject-ed649.web.app/" target="_blank" rel="noopener noreferrer"> MangaTeofilo</a>  
+            <p class="mission-desc">Plataforma para o mangaká independente: leitura, publicação, monetização e produção física sob demanda.</p>
+            <ul class="mission-objectives">
+              <li><span class="obj-bullet" aria-hidden="true">▶</span>Sistema de níveis e regalias para criadores</li>
+              <li><span class="obj-bullet" aria-hidden="true">▶</span>Fluxo completo: da ideia ao impresso</li>
+              <li><span class="obj-bullet" aria-hidden="true">▶</span>Arquitetura escalável para catálogo e autores</li>
+            </ul>
+            <div class="mission-footer">
+              <div class="mission-bar">
+                <div class="mission-fill" style="width:65%"></div>
+              </div>
+              <span class="mission-pct">65% concluído</span>
+            </div>
+          </article>
+
+          <article class="mission-card" tabindex="0">
+            <div class="mission-header">
+              <span class="mission-tag">GESTÃO & LOJA</span>
+              <div class="mission-status active-status">ATIVO</div>
+            </div>
+            <h3 class="mission-name">Chokko Melt</h3>
+            <p class="mission-desc">Sistema de gestão + e-commerce focado em microempreendedor com controle de estoque e loja online.</p>
+            <ul class="mission-objectives">
+              <li><span class="obj-bullet" aria-hidden="true">▶</span>Controle de estoque, promoções e congelamento</li>
+              <li><span class="obj-bullet" aria-hidden="true">▶</span>Pedidos com impressão, cancelamento e relatório</li>
+              <li><span class="obj-bullet" aria-hidden="true">▶</span>Loja com horário de funcionamento configurável</li>
+            </ul>
+            <div class="mission-footer">
+              <div class="mission-bar">
+                <div class="mission-fill" style="width:80%"></div>
+              </div>
+              <span class="mission-pct">80% concluído</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="hud-bottom" aria-hidden="true">
+          <span class="hud-cmd"><span class="hud-btn">A</span> Detalhes</span>
+          <span class="hud-cmd"><span class="hud-btn">B</span> Voltar</span>
+          <span class="hud-tip-label">Selecione uma Missão<span class="hud-tip-sub">Comandos</span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS — tela de persona/habilidades -->
+    <section id="skills" class="screen screen-skills">
+      <div class="section-tag-label" aria-hidden="true">PERSONA</div>
+      <div class="screen-inner">
+        <div class="p3-section-title">
+          <div class="title-diamond" aria-hidden="true"></div>
+          <h2>Stack &amp; Habilidades</h2>
+        </div>
+
+        <div class="skills-party">
+
+          <div class="skill-category">
+            <div class="skill-cat-label">LEADER</div>
+            <div class="skill-rows">
+              <div class="skill-row" style="--sk-color:#00ccff">
+                <div class="skill-portrait" aria-hidden="true"><span>PHP</span></div>
+                <div class="skill-info">
+                  <span class="skill-name">PHP</span>
+                  <span class="skill-lv">Lv 42</span>
+                  <span class="skill-stat-label hp">HP</span>
+                  <span class="skill-val hp">320</span>
+                  <span class="skill-stat-label sp">SP</span>
+                  <span class="skill-val sp">180</span>
+                </div>
+              </div>
+              <div class="skill-row" style="--sk-color:#ffcc00">
+                <div class="skill-portrait" aria-hidden="true"><span>JS</span></div>
+                <div class="skill-info">
+                  <span class="skill-name">JavaScript</span>
+                  <span class="skill-lv">Lv 38</span>
+                  <span class="skill-stat-label hp">HP</span>
+                  <span class="skill-val hp">280</span>
+                  <span class="skill-stat-label sp">SP</span>
+                  <span class="skill-val sp">200</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-cat-label">PARTY</div>
+            <div class="skill-rows">
+              <div class="skill-row" style="--sk-color:#66ff66">
+                <div class="skill-portrait" aria-hidden="true"><span>JAVA</span></div>
+                <div class="skill-info">
+                  <span class="skill-name">Java</span>
+                  <span class="skill-lv">Lv 30</span>
+                  <span class="skill-stat-label hp">HP</span>
+                  <span class="skill-val hp">240</span>
+                  <span class="skill-stat-label sp">SP</span>
+                  <span class="skill-val sp">160</span>
+                </div>
+              </div>
+              <div class="skill-row" style="--sk-color:#ff6644">
+                <div class="skill-portrait" aria-hidden="true"><span>SQL</span></div>
+                <div class="skill-info">
+                  <span class="skill-name">MySQL / Postgres</span>
+                  <span class="skill-lv">Lv 35</span>
+                  <span class="skill-stat-label hp">HP</span>
+                  <span class="skill-val hp">290</span>
+                  <span class="skill-stat-label sp">SP</span>
+                  <span class="skill-val sp">140</span>
+                </div>
+              </div>
+              <div class="skill-row" style="--sk-color:#ff0099">
+                <div class="skill-portrait" aria-hidden="true"><span>RE</span></div>
+                <div class="skill-info">
+                  <span class="skill-name">React / HTML / CSS</span>
+                  <span class="skill-lv">Lv 33</span>
+                  <span class="skill-stat-label hp">HP</span>
+                  <span class="skill-val hp">260</span>
+                  <span class="skill-stat-label sp">SP</span>
+                  <span class="skill-val sp">190</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-cat-label">NAVI</div>
+            <div class="skill-rows">
+              <div class="skill-row" style="--sk-color:#aaccff">
+                <div class="skill-portrait" aria-hidden="true"><span>HW</span></div>
+                <div class="skill-info">
+                  <span class="skill-name">Suporte & Hardware</span>
+                  <span class="skill-lv">Lv 49</span>
+                  <span class="skill-stat-label hp">HP</span>
+                  <span class="skill-val hp">393</span>
+                  <span class="skill-stat-label sp">SP</span>
+                  <span class="skill-val sp">232</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="hud-bottom" aria-hidden="true">
+          <span class="hud-cmd"><span class="hud-btn">LB</span> Ver Status</span>
+          <span class="hud-cmd"><span class="hud-btn">RB</span> Próximo</span>
+          <span class="hud-tip-label">Cujos stats ver?<span class="hud-tip-sub">Guia</span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT — tela de vínculo social -->
+    <section id="contact" class="screen screen-contact">
+      <div class="section-tag-label" aria-hidden="true">VÍNCULO SOCIAL</div>
+      <div class="screen-inner">
+        <div class="p3-section-title">
+          <div class="title-diamond" aria-hidden="true"></div>
+          <h2>Vamos trabalhar juntos?</h2>
+        </div>
+        <p class="contact-lead">Conta sobre o projeto: qual o problema hoje e o que você gostaria que o sistema fizesse por você.</p>
+
+        <form class="p3-form contact-form" novalidate>
+          <div class="form-row">
+            <div class="p3-field">
+              <label class="p3-label" for="name">NOME</label>
+              <input class="p3-input" id="name" type="text" placeholder="Seu nome" autocomplete="name" />
+            </div>
+            <div class="p3-field">
+              <label class="p3-label" for="email">EMAIL</label>
+              <input class="p3-input" id="email" type="email" placeholder="voce@exemplo.com" autocomplete="email" />
+            </div>
+          </div>
+          <div class="p3-field">
+            <label class="p3-label" for="service">TIPO DE PROJETO</label>
+            <select class="p3-input p3-select" id="service">
+              <option value="">Selecione uma opção</option>
+              <option value="plataforma">Plataforma / sistema web</option>
+              <option value="ecommerce">E-commerce / loja online</option>
+              <option value="interno">Ferramenta interna / automação</option>
+              <option value="suporte">Suporte / manutenção</option>
+            </select>
+          </div>
+          <div class="p3-field">
+            <label class="p3-label" for="message">MENSAGEM</label>
+            <textarea class="p3-input p3-textarea" id="message" rows="4" placeholder="Conte sobre o contexto, o objetivo e prazos."></textarea>
+          </div>
+          <button class="p3-btn" type="submit">
+            <span class="p3-btn-diamond" aria-hidden="true"></span>
+            ENVIAR MENSAGEM
+          </button>
+        </form>
+
+        <div class="hud-bottom" aria-hidden="true">
+          <span class="hud-cmd"><span class="hud-btn">A</span> Confirmar</span>
+          <span class="hud-cmd"><span class="hud-btn">B</span> Cancelar</span>
+          <span class="hud-tip-label">Inicie um Vínculo Social<span class="hud-tip-sub">Comandos</span></span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="p3-footer" role="contentinfo">
+    <div class="footer-inner">
+      <span class="footer-brand">WT</span>
+      <p>© <span id="year"></span> Wilson Teofilo — Dev &amp; Suporte de TI</p>
+      <p class="footer-note">Construindo soluções que funcionam na prática.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
